@@ -146,9 +146,9 @@ namespace optometerCalib
                 DisplayOnly("");
             }
             /***************************************************/
-            string CsvHeader() => $"measurement number, range, sample size, specification (A), measured current (A), standard deviation (A), test current (A), standard uncertainty (A)";
+            string CsvHeader() => $"measurement number, range, specification (A), measured current (A), standard deviation (A), test current (A), standard uncertainty (A)";
             /***************************************************/
-            string CsvLine(int index) => $"{index}, {device.GetMeasurementRange()}, {stpCurrent.SampleSize}, {device.GetSpecification(stpCurrent.AverageValue, device.GetMeasurementRange())}, {stpCurrent.AverageValue}, {stpCurrent.StandardDeviation}, {"[TestCurrent]"}, {"[u(TestCurrent)]"}";
+            string CsvLine(int index) => $"{index}, {device.GetMeasurementRange()}, {device.GetSpecification(stpCurrent.AverageValue, device.GetMeasurementRange())}, {stpCurrent.AverageValue}, {stpCurrent.StandardDeviation}, {"[TestCurrent]"}, {"[u(TestCurrent)]"}";
             /***************************************************/
             void CsvLog(string line)
             {
