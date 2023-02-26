@@ -104,6 +104,15 @@ namespace optometerCalib
                 }
             }
 
+            LogOnly("");
+            LogOnly(fatSeparator);
+            if (measurementIndex == 1)
+                LogOnly($"{measurementIndex} measurement logged - StopTimeUTC: {timeStamp:dd-MM-yyyy HH:mm}");
+            else
+                LogOnly($"{measurementIndex} measurements logged - StopTimeUTC: {timeStamp:dd-MM-yyyy HH:mm}");
+            LogOnly(fatSeparator);
+            LogOnly("");
+
             logWriter.Close();
             csvWriter.Close();
             device.SelectAutoRange();
