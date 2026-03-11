@@ -33,11 +33,11 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="At.Matus.Instruments.GO.Optometer">
+      <HintPath>..\..\At.Matus.Instruments.GO.Optometer\At.Matus.Instruments.GO.Optometer\bin\Release\At.Matus.Instruments.GO.Optometer.dll</HintPath>
+    </Reference>
     <Reference Include="At.Matus.StatisticPod">
       <HintPath>..\..\At.Matus.StatisticPod\bin\Release\At.Matus.StatisticPod.dll</HintPath>
-    </Reference>
-    <Reference Include="Bev.Instruments.P9710">
-      <HintPath>..\..\Bev.Instruments.P9710\bin\Release\Bev.Instruments.P9710.dll</HintPath>
     </Reference>
     <Reference Include="CommandLine, Version=1.9.71.2, Culture=neutral, PublicKeyToken=de6f01bd326f8c32, processorArchitecture=MSIL">
       <HintPath>..\packages\CommandLineParser.1.9.71\lib\net45\CommandLine.dll</HintPath>

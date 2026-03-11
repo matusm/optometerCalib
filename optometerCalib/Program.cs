@@ -1,5 +1,5 @@
-﻿using At.Matus.StatisticPod;
-using Bev.Instruments.P9710;
+﻿using At.Matus.Instruments.GO.Optometer;
+using At.Matus.StatisticPod;
 using System;
 using System.Globalization;
 using System.IO;
